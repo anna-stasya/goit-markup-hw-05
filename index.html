@@ -11,14 +11,16 @@
 </head>
 <body>
     <!--header-->
-    <header>
+    <header class="ghj">
         <div class="container hat">
             <nav class="main-nav hat">
                 <a href="./index.html" class="logo">  <span class="logo-web">Web</span>Studio </a>
                 <ul class="site list">
+                
                     <li class="item"> <a href="./index.html" target="_blank" class="nav link current"> Студия </a> </li>
                     <li class="item"> <a href="./portfolio.html" target="_blank" class="nav link"> Портфолио </a> </li>
                     <li class="item"> <a href="#" target="_blank" class="nav link"> Контакты </a> </li>
+                    <div class="line-current current"></div>
                 </ul>
             </nav>        
                 <ul class="auth list">
@@ -39,7 +41,10 @@
                         </a> 
                     </li>
                 </ul>
+              
         </div>
+       
+        
     </header>
 
     <main>  
@@ -48,7 +53,7 @@
             <div class="container">
                 <div class="hero-pic">
                     <h1 class="hero-title"> Эффективные решения для вашего бизнеса </h1>
-                    <button type="button" class="hero-button"> Заказать услугу </button>
+                    <button type="button" class="hero-button" data-modal-open> Заказать услугу </button>   
                 </div>
             </div>
         </section>
@@ -163,7 +168,7 @@
                                     </a>
                                 </li>
     
-                                 <li class="socials">
+                                <li class="socials">
                                     <a href="#" target="_blank" class="icon-box">
                                         <svg class="team-icon" width="20px" height="20px">
                                         <use href="./img/Главная/sprite-icons.svg#icon-facebook"></use></svg>
@@ -201,7 +206,7 @@
                                     </a>
                                 </li>
     
-                                 <li class="socials">
+                                <li class="socials">
                                     <a href="#" target="_blank" class="icon-box">
                                         <svg class="team-icon" width="20px" height="20px">
                                         <use href="./img/Главная/sprite-icons.svg#icon-facebook"></use></svg>
@@ -239,7 +244,7 @@
                                     </a>
                                 </li>
     
-                                 <li class="socials">
+                                <li class="socials">
                                     <a href="#" target="_blank" class="icon-box">
                                         <svg class="team-icon" width="20px" height="20px">
                                         <use href="./img/Главная/sprite-icons.svg#icon-facebook"></use></svg>
@@ -277,7 +282,7 @@
                                     </a>
                                 </li>
     
-                                 <li class="socials">
+                                <li class="socials">
                                     <a href="#" target="_blank" class="icon-box">
                                         <svg class="team-icon" width="20px" height="20px">
                                         <use href="./img/Главная/sprite-icons.svg#icon-facebook"></use></svg>
@@ -348,6 +353,17 @@
 
             </div>
         </section>
+        
+        <!-- MODAL -->
+        <div  class="modal-window is-hidden" data-modal>
+            <div class="hero-modal">
+                <button class="circle-icon" data-modal-close>
+                    <svg class="modal-icons" width="18px" height="18px">
+                        <use href="./img/Главная/sprite-icons.svg#icon-close-back"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
     </main>
 
     <!--Footer-->
@@ -404,5 +420,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>

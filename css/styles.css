@@ -50,7 +50,7 @@ a {
   padding-right: 15px;
   align-items: center;
 
-  /* outline: 2px solid coral; */
+  outline: 2px solid coral;
 }
 
 /* ======================== HEADER ========================*/
@@ -58,10 +58,26 @@ a {
 .hat {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .container.hat {
   border-bottom: 1px solid #ececec;
+}
+
+.line-current {
+  display: flex;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 48px;
+  height: 4px;
+
+  bottom: 0;
+  left: 0;
+
+  background: #2196f3;
+  border-radius: 2px;
 }
 
 .logo {
@@ -204,6 +220,63 @@ a {
   cursor: pointer;
   color: var(--text-title-button-color);
   background-color: var(--button-hover-color);
+}
+
+/*==========================MODAL==========================*/
+
+.modal-window {
+  position: fixed;
+  width: 1600px;
+  height: 1024px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  border: none;
+  z-index: 1;
+
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal-window.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.hero-modal {
+  display: flex;
+  justify-content: flex-end;
+
+  position: fixed;
+  width: 528px;
+  height: 581px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  background: var(--text-title-button-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.circle-icon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 8px;
+  margin-right: 7px;
+
+  width: 30px;
+  height: 30px;
+
+  background: var(--text-title-button-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
 }
 
 /* ========================FEATURE ========================*/
