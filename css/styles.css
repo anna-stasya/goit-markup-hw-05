@@ -431,6 +431,7 @@ a {
   border-radius: 4px;
   cursor: pointer;
   fill: var(--color-icon);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-website {
@@ -446,7 +447,7 @@ a {
 .regular-clients:focus {
   fill: var(--button-hover-color);
   border-color: var(--button-hover-color);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========================PAGE PORTFILIO ========================*/
