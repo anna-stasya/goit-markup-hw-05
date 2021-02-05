@@ -58,7 +58,6 @@ a {
 .hat {
   display: flex;
   align-items: center;
-  /* position: relative; */
 }
 
 .container.hat {
@@ -72,6 +71,7 @@ a {
   position: absolute;
 
   margin-top: 28px;
+  margin-button: -1px;
   width: 100%;
   height: 4px;
 
@@ -124,6 +124,7 @@ a {
 
 .site .link.current {
   color: var(--button-hover-color);
+  position: relative;
 }
 
 .site .link:hover,
@@ -149,6 +150,7 @@ a {
 .icons-header {
   fill: var(--paragraph-color);
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth .item:not(:last-child) {
@@ -404,16 +406,10 @@ a {
 .icon-box:hover .team-icon,
 .icon-box:focus .team-icon {
   fill: var(--text-title-button-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========================CLIENTS ========================*/
-
-.command-client {
-  /* transition: background 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
-  /* transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
-  /* transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
-}
 
 .section-client {
   padding-top: 94px;
@@ -431,7 +427,6 @@ a {
   border-radius: 4px;
   cursor: pointer;
   fill: var(--color-icon);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-website {
@@ -447,7 +442,8 @@ a {
 .regular-clients:focus {
   fill: var(--button-hover-color);
   border-color: var(--button-hover-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ========================PAGE PORTFILIO ========================*/
