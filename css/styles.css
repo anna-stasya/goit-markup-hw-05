@@ -69,12 +69,9 @@ a {
   content: "";
   display: flex;
   position: absolute;
-
   margin-top: 28px;
-  margin-button: -1px;
   width: 100%;
   height: 4px;
-
   background: #2196f3;
   border-radius: 2px;
 }
@@ -105,6 +102,7 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: -1px;
 }
 
 .site .item:not(:last-child) {
@@ -303,10 +301,8 @@ a {
 .thumb-work {
   position: absolute;
   bottom: 0;
-
   width: 370px;
   height: 70px;
-
   background: rgba(47, 48, 58, 0.8);
 }
 
@@ -319,14 +315,8 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
   padding: 27px 82px;
-
   margin: 0;
-
   position: absolute;
-
-  /* left: 20%;
-  bottom: 20%; */
-
   color: var(--text-title-button-color);
 }
 
@@ -669,12 +659,6 @@ a {
   height: 100%;
   left: 0%;
   top: 0%;
-
-  /*width: 1600%;
-  height: 1024%;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%); */
 
   border: none;
   z-index: 1;
